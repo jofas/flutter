@@ -249,6 +249,12 @@ abstract class ScrollView extends StatelessWidget {
   ///   physics: const ScrollPhysics(),
   /// ```
   ///
+  /// The default scroll physics can be retrieved from the [BuildContext]:
+  ///
+  /// ```dart
+  ///   physics: ScrollConfiguration.of(context).getScrollPhysics(context),
+  /// ```
+  ///
   /// The physics can be changed dynamically (by providing a new object in a
   /// subsequent build), but new physics will only take effect if the _class_ of
   /// the provided object changes. Merely constructing a new instance with a
